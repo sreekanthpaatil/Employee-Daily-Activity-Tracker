@@ -2,6 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "local": "nodemon index.js",
     "dev": "yarn run compile && node build/app.js",
