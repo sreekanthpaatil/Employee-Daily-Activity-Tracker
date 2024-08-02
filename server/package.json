@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "local": "nodemon index.js",
+    "dev": "yarn run compile && node build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "shx rm -rf build/ && tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepare": "cd ../ && husky install ./server/.husky"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "express": "^4.19.2",
+    "husky": "^9.1.4",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4"
+  }
+}
